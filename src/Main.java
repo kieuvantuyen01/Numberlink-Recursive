@@ -1,3 +1,4 @@
+import javax.naming.TimeLimitExceededException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -5,9 +6,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 
 public class Main {
+    public static final int TIMEOUT = 1500;
     static String inputPath = "./inp";
     static String outputPath = "./out/out.txt";
     public static File inputFolder = new File(inputPath);
@@ -48,7 +50,6 @@ public class Main {
         }
         maxNum = getMaxNum(input);
         System.out.println("rows: " + rows + " cols: " + cols + " maxNum: " + maxNum);
-        System.out.println(Arrays.deepToString(input));
         numberlink = new Numberlink(rows, cols, maxNum, input);
     }
 
@@ -62,16 +63,39 @@ public class Main {
                     String fileInfo = "";
                     String fileName = fileEntry.getName();
                     if ((fileName.substring(fileName.lastIndexOf('.') + 1).toLowerCase()).equals("in")) {
-                        readFile(fileEntry);
-                        new Image2dViewer(numberlink.CreateNumberlink());
-                        int[] flow = new int[maxNum];
-                        for (int i = 0; i < maxNum; i++) {
-                            flow[i] = 0;
+                        ExecutorService executor = Executors.newSingleThreadExecutor();
+                        Future<?> future = executor.submit(new Runnable() {
+                            @Override
+                            public void run() {
+                                try {
+                                    readFile(fileEntry);
+                                    new Image2dViewer(numberlink.CreateNumberlink());
+                                    int[] flow = new int[maxNum];
+                                    for (int i = 0; i < maxNum; i++) {
+                                        flow[i] = 0;
+                                    }
+                                    long t0 = System.currentTimeMillis();
+                                    System.out.println((numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow)));
+                                    long tf = System.currentTimeMillis();
+                                    System.out.println("Time: " + (tf - t0) + " ms");
+                                } catch (IOException e) {
+                                    throw new RuntimeException(e);
+                                }
+                            }
+                        });
+                        try {
+                            future.get(TIMEOUT, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
+                        } catch (InterruptedException e) {    //     possible error cases
+                            System.out.println("job was interrupted");
+                        } catch (ExecutionException e) {
+                            System.out.println("caught exception: " + e.getCause());
+                        } catch (java.util.concurrent.TimeoutException e) {
+                            future.cancel(true);              //     interrupt the job
+                            System.out.println("timeout");
+                            System.out.println("UNSAT");
+                        } finally {
+                            executor.shutdownNow();           //     always reclaim resources
                         }
-                        long t0 = System.currentTimeMillis();
-                        System.out.println((numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow)));
-                        long tf = System.currentTimeMillis();
-                        System.out.println("Time: " + (tf - t0) + " ms");
                     }
                 }
             }
@@ -81,7 +105,7 @@ public class Main {
         process(inputFolder);
     }
 
-    public static void main_bak(String[] args) {
+    public static void mainBak(String[] args) {
 
         int[][] test = {{4, 0, 0, 0, 0, 0, 7},
                 {0, 0, 6, 0, 3, 0, 1},
