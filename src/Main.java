@@ -1,6 +1,7 @@
 import javax.naming.TimeLimitExceededException;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,10 +15,19 @@ public class Main {
     static String outputPath = "./out/out.txt";
     public static File inputFolder = new File(inputPath);
     public static File outputFolder = new File(outputPath);
-
     public static Numberlink numberlink = null;
     public static int maxNum = 0;
 
+//    public static void outputToTxt(String res, File outFile) {
+//        try {
+//            FileWriter writer = new FileWriter(outFile,true);
+//            writer.write(res + "\n");
+//            writer.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
     private static int getMaxNum(int[][] matrix) {
         int maxNum = 0;
         for (int i = 1; i < matrix.length; i++) {
@@ -50,7 +60,7 @@ public class Main {
         }
         maxNum = getMaxNum(input);
         System.out.println("rows: " + rows + " cols: " + cols + " maxNum: " + maxNum);
-        numberlink = new Numberlink(rows, cols, maxNum, input);
+        numberlink = new Numberlink(cols, rows, maxNum, input);
     }
 
     public static void process(final File folder) throws InterruptedException, IOException, TimeoutException  {
@@ -60,9 +70,10 @@ public class Main {
                 process(fileEntry);
             } else {
                 if (fileEntry.isFile()) {
-                    String fileInfo = "";
+//                    String fileInfo = "";
                     String fileName = fileEntry.getName();
                     if ((fileName.substring(fileName.lastIndexOf('.') + 1).toLowerCase()).equals("in")) {
+//                        final String[] time = {""};
                         ExecutorService executor = Executors.newSingleThreadExecutor();
                         Future<?> future = executor.submit(new Runnable() {
                             @Override
@@ -75,8 +86,10 @@ public class Main {
                                         flow[i] = 0;
                                     }
                                     long t0 = System.currentTimeMillis();
+//                                    status = String.valueOf(numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow));
                                     System.out.println((numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow)));
                                     long tf = System.currentTimeMillis();
+//                                    time[0] = String.valueOf(tf - t0);
                                     System.out.println("Time: " + (tf - t0) + " ms");
                                 } catch (IOException e) {
                                     throw new RuntimeException(e);
@@ -91,12 +104,16 @@ public class Main {
                             System.out.println("caught exception: " + e.getCause());
                         } catch (java.util.concurrent.TimeoutException e) {
                             future.cancel(true);              //     interrupt the job
+//                            time[0] = "timeout";
                             System.out.println("timeout");
+//                            status = "UNSAT";
                             System.out.println("UNSAT");
                         } finally {
                             executor.shutdownNow();           //     always reclaim resources
                         }
+//                        fileInfo = fileName + "\t" + numberlink.height + "x" + numberlink.width + "\t" + maxNum + "\t" + time[0];
                     }
+//                    outputToTxt(fileInfo, outputFolder);
                 }
             }
         }

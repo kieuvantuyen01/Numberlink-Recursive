@@ -17,10 +17,10 @@ public class Numberlink {
 
     //Create a Grid
     public static Image2d makequadrillage(int w, int h) {
-        Image2d img = new Image2d(256);
+        Image2d img = new Image2d(500);
         for (int i = 0; i < w; i++) {
             for (int j = 0; j < h; j++) {
-                img.addPolygon(new int[]{25 + 25 * j, 25 + 25 * j, 25 + (j + 1) * 25, 25 + (j + 1) * 25}, new int[]{25 + 25 * i, 25 + 25 * (i + 1), 25 + 25 * (i + 1), 25 + 25 * i}, Color.WHITE, Color.BLACK);
+                img.addPolygon(new int[]{15 + 15 * j, 15 + 15 * j, 15 + (j + 1) * 15, 15 + (j + 1) * 15}, new int[]{15 + 15 * i, 15 + 15 * (i + 1), 15 + 15 * (i + 1), 15 + 15 * i}, Color.WHITE, Color.BLACK);
             }
         }
         return img;
@@ -28,18 +28,19 @@ public class Numberlink {
 
     //Create a square
     public static Image2d makesquareat(int xpos, int ypos, Color color) {
-        Image2d img = new Image2d(256);
-        img.addPolygon(new int[]{25 + 25 * xpos, 25 + 25 * xpos, 25 + 25 * (xpos + 1), 25 + 25 * (xpos + 1)}, new int[]{25 + 25 * ypos, 25 + 25 * (ypos + 1), 25 + 25 * (ypos + 1), 25 + 25 * ypos}, color, Color.BLACK);
+        Image2d img = new Image2d(500);
+        img.addPolygon(new int[]{15 + 15 * xpos, 15 + 15 * xpos, 15 + 15 * (xpos + 1), 15 + 15 * (xpos + 1)}, new int[]{15 + 15 * ypos, 15 + 15 * (ypos + 1), 15 + 15 * (ypos + 1), 15 + 15 * ypos}, color, Color.BLACK);
         return img;
     }
 
     //Create a Numberlink
     Image2d CreateNumberlink() {
-        Image2d img = new Image2d(600);
-        Color[] couleurs = new Color[19];
+        Image2d img = new Image2d(500);
+        Color[] couleurs = new Color[45];
         int w = this.width;
         int h = this.height;
         int[][] m = this.map;
+
         couleurs[0] = Color.WHITE;
         System.setProperty("one", "#6fbfed");
         couleurs[1] = Color.getColor("one");
@@ -63,7 +64,6 @@ public class Numberlink {
         couleurs[10] = Color.getColor("ten");
         System.setProperty("eleven", "#0e4380");
         couleurs[11] = Color.getColor("eleven");
-
         System.setProperty("twelve", "#800e2b");
         couleurs[12] = Color.getColor("twelve");
         System.setProperty("thirteen", "#805e0e");
@@ -72,11 +72,56 @@ public class Numberlink {
         couleurs[14] = Color.getColor("fourteen");
         System.setProperty("fifteen", "#0e806d");
         couleurs[15] = Color.getColor("fifteen");
-
         System.setProperty("sixteen", "##9fe39d");
         couleurs[16] = Color.getColor("sixteen");
         System.setProperty("seventeen", "#80094c");
         couleurs[17] = Color.getColor("seventeen");
+        System.setProperty("one", "#6fbfed");
+        couleurs[18] = Color.getColor("one");
+        System.setProperty("two", "#edbee8");
+        couleurs[19] = Color.getColor("two");
+        System.setProperty("three", "#eb5763");
+        couleurs[20] = Color.getColor("three");
+        System.setProperty("four", "#eb9a57");
+        couleurs[21] = Color.getColor("four");
+        System.setProperty("five", "#57eb88");
+        couleurs[22] = Color.getColor("five");
+        System.setProperty("six", "#5763eb");
+        couleurs[23] = Color.getColor("six");
+        System.setProperty("seven", "#cd82f5");
+        couleurs[24] = Color.getColor("seven");
+        System.setProperty("eight", "#f5e282");
+        couleurs[25] = Color.getColor("eight");
+        System.setProperty("nine", "#bcf582");
+        couleurs[26] = Color.getColor("nine");
+        System.setProperty("ten", "#818a86");
+        couleurs[27] = Color.getColor("ten");
+        System.setProperty("eleven", "#0e4380");
+        couleurs[28] = Color.getColor("eleven");
+        System.setProperty("twelve", "#800e2b");
+        couleurs[29] = Color.getColor("twelve");
+        System.setProperty("thirteen", "#805e0e");
+        couleurs[30] = Color.getColor("thirteen");
+        System.setProperty("fourteen", "#54800e");
+        couleurs[31] = Color.getColor("fourteen");
+        System.setProperty("fifteen", "#0e806d");
+        couleurs[32] = Color.getColor("fifteen");
+        System.setProperty("sixteen", "##9fe39d");
+        couleurs[33] = Color.getColor("sixteen");
+        System.setProperty("seventeen", "#80094c");
+        couleurs[34] = Color.getColor("seventeen");
+        System.setProperty("sixteen", "##9fe39d");
+        couleurs[35] = Color.getColor("sixteen");
+        System.setProperty("seventeen", "#80094c");
+        couleurs[36] = Color.getColor("seventeen");
+        System.setProperty("sixteen", "##9fe39d");
+        couleurs[37] = Color.getColor("sixteen");
+        System.setProperty("seventeen", "#80094c");
+        couleurs[38] = Color.getColor("seventeen");
+        System.setProperty("sixteen", "##9fe39d");
+        couleurs[39] = Color.getColor("sixteen");
+        System.setProperty("seventeen", "#80094c");
+        couleurs[40] = Color.getColor("seventeen");
 
         for (int i = 0; i < w; i++) {
             for (int j = 0; j < h; j++) {
