@@ -1,8 +1,87 @@
-import java.awt.Color;
-import java.util.LinkedList;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.util.concurrent.TimeoutException;
 
 public class Main {
-    public static void main(String[] args) {
+    static String inputPath = "./inp";
+    static String outputPath = "./out/out.txt";
+    public static File inputFolder = new File(inputPath);
+    public static File outputFolder = new File(outputPath);
+
+    public static Numberlink numberlink = null;
+    public static int maxNum = 0;
+
+    private static int getMaxNum(int[][] matrix) {
+        int maxNum = 0;
+        for (int i = 1; i < matrix.length; i++) {
+            for (int j = 1; j < matrix[0].length; j++) {
+                if (maxNum < matrix[i][j]) {
+                    maxNum = matrix[i][j];
+                }
+            }
+        }
+        return maxNum;
+    }
+
+    public static void readFile(File file) throws FileNotFoundException {
+        Scanner sc = new Scanner(file);
+        List<List<String>> matrix = new ArrayList<>();
+        while (sc.hasNextLine()) {
+            String line = sc.nextLine();
+            List<String> arr = Arrays.asList(line.split(" "));
+            matrix.add(arr);
+        }
+        sc.close();
+        int rows = matrix.size();
+        int cols = matrix.get(0).size();
+
+        int[][] input = new int[rows + 1][cols + 1];
+        for (int i = 1; i < rows + 1; i++) {
+            for (int j = 1; j < cols + 1; j++) {
+                input[i][j] = Integer.parseInt(matrix.get(i - 1).get(j - 1));
+            }
+        }
+        maxNum = getMaxNum(input);
+        System.out.println("rows: " + rows + " cols: " + cols + " maxNum: " + maxNum);
+        System.out.println(Arrays.deepToString(input));
+        numberlink = new Numberlink(rows, cols, maxNum, input);
+    }
+
+    public static void process(final File folder) throws InterruptedException, IOException, TimeoutException  {
+        if (folder.listFiles() == null) return;
+        for (final File fileEntry : folder.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                process(fileEntry);
+            } else {
+                if (fileEntry.isFile()) {
+                    String fileInfo = "";
+                    String fileName = fileEntry.getName();
+                    if ((fileName.substring(fileName.lastIndexOf('.') + 1).toLowerCase()).equals("in")) {
+                        readFile(fileEntry);
+                        new Image2dViewer(numberlink.CreateNumberlink());
+                        int[] flow = new int[maxNum];
+                        for (int i = 0; i < maxNum; i++) {
+                            flow[i] = 0;
+                        }
+                        long t0 = System.currentTimeMillis();
+                        System.out.println((numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow)));
+                        long tf = System.currentTimeMillis();
+                        System.out.println("Time: " + (tf - t0) + " ms");
+                    }
+                }
+            }
+        }
+    }
+    public static void main(String[] args) throws IOException, InterruptedException, TimeoutException {
+        process(inputFolder);
+    }
+
+    public static void main_bak(String[] args) {
 
         int[][] test = {{4, 0, 0, 0, 0, 0, 7},
                 {0, 0, 6, 0, 3, 0, 1},
