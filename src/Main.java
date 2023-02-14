@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 
 public class Main {
     public static final int TIMEOUT = 1500;
-    static String inputPath = "./inp";
+    static String inputPath = "./input";
     static String outputPath = "./out/out.txt";
     public static File inputFolder = new File(inputPath);
     public static File outputFolder = new File(outputPath);
@@ -60,7 +60,7 @@ public class Main {
         }
         maxNum = getMaxNum(input);
         System.out.println("rows: " + rows + " cols: " + cols + " maxNum: " + maxNum);
-        numberlink = new Numberlink(cols, rows, maxNum, input);
+        numberlink = new Numberlink(rows, cols, maxNum, input);
     }
 
     public static void process(final File folder) throws InterruptedException, IOException, TimeoutException  {
