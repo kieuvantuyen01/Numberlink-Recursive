@@ -40,10 +40,10 @@ public class Main {
         int rows = matrix.size();
         int cols = matrix.get(0).size();
 
-        int[][] input = new int[rows + 1][cols + 1];
-        for (int i = 1; i < rows + 1; i++) {
-            for (int j = 1; j < cols + 1; j++) {
-                input[i][j] = Integer.parseInt(matrix.get(i - 1).get(j - 1));
+        int[][] input = new int[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                input[i][j] = Integer.parseInt(matrix.get(i).get(j));
             }
         }
         maxNum = getMaxNum(input);
