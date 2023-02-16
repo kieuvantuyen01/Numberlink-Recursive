@@ -30,8 +30,8 @@ public class Main {
 //    }
     private static int getMaxNum(int[][] matrix) {
         int maxNum = 0;
-        for (int i = 1; i < matrix.length; i++) {
-            for (int j = 1; j < matrix[0].length; j++) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
                 if (maxNum < matrix[i][j]) {
                     maxNum = matrix[i][j];
                 }
@@ -59,6 +59,7 @@ public class Main {
             }
         }
         maxNum = getMaxNum(input);
+        System.out.println(file.getName());
         System.out.println("rows: " + rows + " cols: " + cols + " maxNum: " + maxNum);
         numberlink = new Numberlink(rows, cols, maxNum, input);
     }
@@ -94,6 +95,7 @@ public class Main {
                                 } catch (IOException e) {
                                     throw new RuntimeException(e);
                                 }
+                                System.out.println("----------------------------");
                             }
                         });
                         try {
