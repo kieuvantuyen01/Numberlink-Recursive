@@ -10,8 +10,8 @@ import java.util.Scanner;
 import java.util.concurrent.*;
 
 public class Main {
-    public static final int TIMEOUT = 1500;
-    static String inputPath = "./input";
+    public static final int TIMEOUT = 1800;
+    static String inputPath = "./inp";
     static String outputPath = "./out/out.txt";
     public static File inputFolder = new File(inputPath);
     public static File outputFolder = new File(outputPath);
