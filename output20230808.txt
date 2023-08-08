@@ -1,0 +1,419 @@
+anh@anh-Precision-5510 ~/Numberlink-Recursive (master)>  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java -XX:+ShowCodeDetailsInExceptionMessa
+ges -cp /home/anh/.config/Code/User/workspaceStorage/a70e7122f1132ff1393758842f01eedb/redhat.java/jdt_ws/Numberlink-Recursive_8ae07abd/bin Main 
+6x6 137.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 8 ms
+----------------------------
+6x6 141.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 124.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 120.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 0 ms
+true
+Time: 1 ms
+----------------------------
+6x6 144.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 131.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 139.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 5 ms
+----------------------------
+6x6 135.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 0 ms
+true
+Time: 2 ms
+----------------------------
+6x6 133.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 130.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 0 ms
+true
+Time: 6 ms
+----------------------------
+6x6 121.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 0 ms
+true
+Time: 1 ms
+----------------------------
+6x6 136.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 0 ms
+true
+Time: 5 ms
+----------------------------
+6x6 143.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 125.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 1 ms
+----------------------------
+6x6 142.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 138.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 5 ms
+----------------------------
+6x6 145.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 3 ms
+----------------------------
+6x6 122.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 123.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+6x6 140.in
+rows: 6 cols: 6 maxNum: 7
+Computation time : 0 ms
+true
+Time: 1 ms
+----------------------------
+6x6 132.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 0 ms
+true
+Time: 9 ms
+----------------------------
+6x6 134.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+anh@anh-Precision-5510 ~/Numberlink-Recursive (master)>  cd /home/anh/Numberlink-Recursive ; /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java 
+-XX:+ShowCodeDetailsInExceptionMessages -cp /home/anh/.config/Code/User/workspaceStorage/a70e7122f1132ff1393758842f01eedb/redhat.java/jdt_ws/Numberlin
+k-Recursive_8ae07abd/bin Main 
+7x7 143.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 0 ms
+true
+Time: 55 ms
+----------------------------
+7x7 137.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 0 ms
+true
+Time: 31 ms
+----------------------------
+7x7 145.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 3 ms
+----------------------------
+7x7 141.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 30 ms
+----------------------------
+7x7 142.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 2 ms
+----------------------------
+7x7 135.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 0 ms
+true
+Time: 48 ms
+----------------------------
+7x7 131.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 4 ms
+----------------------------
+7x7 130.in
+rows: 7 cols: 7 maxNum: 4
+Computation time : 0 ms
+true
+Time: 525 ms
+----------------------------
+7x7 134.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 0 ms
+true
+Time: 6 ms
+----------------------------
+7x7 121.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 0 ms
+true
+Time: 11 ms
+----------------------------
+7x7 132.in
+rows: 7 cols: 7 maxNum: 8
+Computation time : 0 ms
+true
+Time: 3 ms
+----------------------------
+7x7 139.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 71 ms
+----------------------------
+7x7 120.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 3 ms
+----------------------------
+7x7 123.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 0 ms
+true
+Time: 16 ms
+----------------------------
+7x7 140.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 1 ms
+----------------------------
+7x7 133.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 42 ms
+----------------------------
+7x7 124.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+7x7 144.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 4 ms
+----------------------------
+7x7 136.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 0 ms
+true
+Time: 2 ms
+----------------------------
+7x7 138.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 0 ms
+true
+Time: 8 ms
+----------------------------
+7x7 122.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 0 ms
+true
+Time: 14 ms
+----------------------------
+anh@anh-Precision-5510 ~/Numberlink-Recursive (master)>  cd /home/anh/Numberlink-Recursive ; /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java 
+-XX:+ShowCodeDetailsInExceptionMessages -cp /home/anh/.config/Code/User/workspaceStorage/a70e7122f1132ff1393758842f01eedb/redhat.java/jdt_ws/Numberlin
+k-Recursive_8ae07abd/bin Main 
+8x8 120.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 21 ms
+----------------------------
+8x8 137.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 42 ms
+----------------------------
+8x8 131.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 26 ms
+----------------------------
+8x8 144.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 0 ms
+true
+Time: 158 ms
+----------------------------
+8x8 123.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 1 ms
+----------------------------
+8x8 133.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 0 ms
+true
+Time: 755 ms
+----------------------------
+8x8 145.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 66 ms
+----------------------------
+8x8 122.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 147 ms
+----------------------------
+8x8 140.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 0 ms
+true
+Time: 52 ms
+----------------------------
+8x8 124.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 0 ms
+true
+Time: 24235 ms
+----------------------------
+8x8 134.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 1 ms
+----------------------------
+8x8 135.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 0 ms
+true
+Time: 841 ms
+----------------------------
+8x8 130.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 0 ms
+true
+Time: 4420 ms
+----------------------------
+8x8 136.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 0 ms
+true
+Time: 205 ms
+----------------------------
+8x8 139.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+8x8 141.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 35 ms
+----------------------------
+8x8 121.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 0 ms
+true
+Time: 292 ms
+----------------------------
+8x8 132.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 0 ms
+true
+Time: 16 ms
+----------------------------
+8x8 143.in
+rows: 8 cols: 8 maxNum: 9
+Computation time : 0 ms
+true
+Time: 0 ms
+----------------------------
+8x8 142.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 0 ms
+true
+Time: 67 ms
+----------------------------
+8x8 138.in
+rows: 8 cols: 8 maxNum: 5
+Computation time : 0 ms
+true
+Time: 3362 ms
+----------------------------
+anh@anh-Precision-5510 ~/Numberlink-Recursive (master)>  cd /home/anh/Numberlink-Recursive ; /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java 
+-XX:+ShowCodeDetailsInExceptionMessages -cp /home/anh/.config/Code/User/workspaceStorage/a70e7122f1132ff1393758842f01eedb/redhat.java/jdt_ws/Numberlin
+k-Recursive_8ae07abd/bin Main 
+9x9 133.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 0 ms
+true
+Time: 5784 ms
+----------------------------
+9x9 137.in
+rows: 9 cols: 9 maxNum: 7
+Computation time : 0 ms
+true
+Time: 48545 ms
+----------------------------
+9x9 136.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 0 ms
+true
+Time: 79853 ms
+----------------------------
+9x9 143.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 0 ms
+true
+Time: 45439 ms
+----------------------------

@@ -10,8 +10,8 @@ import java.util.Scanner;
 import java.util.concurrent.*;
 
 public class Main {
-    public static final int TIMEOUT = 1800;
-    static String inputPath = "./inp";
+    public static final int TIMEOUT = 900;
+    static String inputPath = "./inp10";
     static String outputPath = "./out/out.txt";
     public static File inputFolder = new File(inputPath);
     public static File outputFolder = new File(outputPath);
@@ -81,7 +81,7 @@ public class Main {
                             public void run() {
                                 try {
                                     readFile(fileEntry);
-                                    new Image2dViewer(numberlink.CreateNumberlink());
+                                    //new Image2dViewer(numberlink.CreateNumberlink());
                                     int[] flow = new int[maxNum];
                                     for (int i = 0; i < maxNum; i++) {
                                         flow[i] = 0;

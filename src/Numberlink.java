@@ -228,8 +228,8 @@ public class Numberlink {
         long t0 = System.currentTimeMillis();
         //RESOLUTION
         if (SolveCounter == this.labelmax && !HaveZeros(map)) {
-            Numberlink solved = new Numberlink(this.width, this.height, this.labelmax, map);
-            new Image2dViewer(solved.CreateNumberlink());
+            //Numberlink solved = new Numberlink(this.width, this.height, this.labelmax, map);
+            //new Image2dViewer(solved.CreateNumberlink());
             long tf = System.currentTimeMillis();
             System.out.println("Computation time : " + (tf - t0) + " ms");
             return true;

@@ -1,0 +1,653 @@
+7x7 143.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 50 ms
+true
+Time: 116 ms
+----------------------------
+6x6 137.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 5 ms
+true
+Time: 7 ms
+----------------------------
+10x10 134.in
+rows: 10 cols: 10 maxNum: 8
+timeout
+UNSAT
+10x10 137.in
+rows: 10 cols: 10 maxNum: 10
+Computation time : 4 ms
+true
+Time: 220 ms
+----------------------------
+8x8 120.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 80 ms
+true
+Time: 109 ms
+----------------------------
+10x10 141.in
+rows: 10 cols: 10 maxNum: 10
+Computation time : 3 ms
+true
+Time: 104834 ms
+----------------------------
+9x9 133.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 3 ms
+true
+Time: 5610 ms
+----------------------------
+7x7 137.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 56 ms
+true
+Time: 81 ms
+----------------------------
+6x6 141.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 4 ms
+true
+Time: 4 ms
+----------------------------
+8x8 137.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 50 ms
+true
+Time: 81 ms
+----------------------------
+9x9 137.in
+rows: 9 cols: 9 maxNum: 7
+Computation time : 3 ms
+true
+Time: 51265 ms
+----------------------------
+8x8 131.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 5 ms
+true
+Time: 21 ms
+----------------------------
+9x9 136.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 2 ms
+true
+Time: 84383 ms
+----------------------------
+8x8 144.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 45 ms
+true
+Time: 168 ms
+----------------------------
+10x10 139.in
+rows: 10 cols: 10 maxNum: 9
+timeout
+UNSAT
+10x10 145.in
+rows: 10 cols: 10 maxNum: 11
+Computation time : 3 ms
+true
+Time: 436816 ms
+----------------------------
+6x6 124.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 4 ms
+true
+Time: 5 ms
+----------------------------
+8x8 123.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 4 ms
+true
+Time: 4 ms
+----------------------------
+6x6 120.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 4 ms
+true
+Time: 4 ms
+----------------------------
+6x6 144.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 13 ms
+true
+Time: 13 ms
+----------------------------
+6x6 131.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 69 ms
+true
+Time: 69 ms
+----------------------------
+9x9 143.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 3 ms
+true
+Time: 50803 ms
+----------------------------
+10x10 130.in
+rows: 10 cols: 10 maxNum: 10
+Computation time : 3 ms
+true
+Time: 555490 ms
+----------------------------
+6x6 139.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 8 ms
+true
+Time: 10 ms
+----------------------------
+10x10 131.in
+rows: 10 cols: 10 maxNum: 8
+Computation time : 2 ms
+true
+Time: 2214323 ms
+----------------------------
+timeout
+UNSAT
+8x8 133.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 3 ms
+true
+Time: 586 ms
+----------------------------
+10x15 387.in
+rows: 10 cols: 15 maxNum: 10
+timeout
+UNSAT
+10x10 140.in
+rows: 10 cols: 10 maxNum: 11
+Computation time : 2 ms
+true
+Time: 32180 ms
+----------------------------
+7x7 145.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 2 ms
+true
+Time: 4 ms
+----------------------------
+10x10 133.in
+rows: 10 cols: 10 maxNum: 11
+Computation time : 2 ms
+true
+Time: 9437 ms
+----------------------------
+8x8 145.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 16 ms
+true
+Time: 113 ms
+----------------------------
+9x9 123.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 2 ms
+true
+Time: 428 ms
+----------------------------
+9x9 121.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 77 ms
+true
+Time: 116 ms
+----------------------------
+10x10 135.in
+rows: 10 cols: 10 maxNum: 9
+timeout
+UNSAT
+7x7 141.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 3 ms
+true
+Time: 9 ms
+----------------------------
+6x6 135.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 2 ms
+true
+Time: 4 ms
+----------------------------
+8x8 122.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 135 ms
+true
+Time: 416 ms
+----------------------------
+8x8 140.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 28 ms
+true
+Time: 120 ms
+----------------------------
+10x10 138.in
+rows: 10 cols: 10 maxNum: 11
+timeout
+UNSAT
+7x7 142.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 5 ms
+true
+Time: 6 ms
+----------------------------
+9x9 140.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 3 ms
+true
+Time: 941389 ms
+----------------------------
+Computation time : 3 ms
+true
+Time: 65806 ms
+----------------------------
+9x9 132.in
+rows: 9 cols: 9 maxNum: 10
+Computation time : 69 ms
+true
+Time: 223 ms
+----------------------------
+10x10 136.in
+rows: 10 cols: 10 maxNum: 10
+timeout
+UNSAT
+10x10 132.in
+rows: 10 cols: 10 maxNum: 9
+timeout
+UNSAT
+8x8 124.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 5 ms
+true
+Time: 52327 ms
+----------------------------
+6x6 133.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 3 ms
+true
+Time: 7 ms
+----------------------------
+7x7 135.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 108 ms
+true
+Time: 159 ms
+----------------------------
+8x8 134.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 2 ms
+true
+Time: 3 ms
+----------------------------
+6x6 130.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 3 ms
+true
+Time: 7 ms
+----------------------------
+7x7 131.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 3 ms
+true
+Time: 7 ms
+----------------------------
+7x7 130.in
+rows: 7 cols: 7 maxNum: 4
+Computation time : 181 ms
+true
+Time: 894 ms
+----------------------------
+9x9 135.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 4 ms
+true
+Time: 692 ms
+----------------------------
+9x9 142.in
+rows: 9 cols: 9 maxNum: 10
+Computation time : 16 ms
+true
+Time: 94 ms
+----------------------------
+9x9 134.in
+rows: 9 cols: 9 maxNum: 7
+Computation time : 4 ms
+true
+Time: 2160 ms
+----------------------------
+6x6 121.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 27 ms
+true
+Time: 27 ms
+----------------------------
+10x10 143.in
+rows: 10 cols: 10 maxNum: 9
+Computation time : 4 ms
+true
+Time: 7680 ms
+----------------------------
+10x10 120.in
+rows: 10 cols: 10 maxNum: 10
+timeout
+UNSAT
+7x7 134.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 13 ms
+true
+Time: 16 ms
+----------------------------
+6x6 136.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 8 ms
+true
+Time: 9 ms
+----------------------------
+7x7 121.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 3 ms
+true
+Time: 13 ms
+----------------------------
+6x6 143.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 2 ms
+true
+Time: 4 ms
+----------------------------
+6x6 125.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 2 ms
+true
+Time: 4 ms
+----------------------------
+9x9 144.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 3 ms
+true
+Time: 25829 ms
+----------------------------
+9x9 145.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 17 ms
+true
+Time: 56322 ms
+----------------------------
+7x7 132.in
+rows: 7 cols: 7 maxNum: 8
+Computation time : 13 ms
+true
+Time: 13 ms
+----------------------------
+7x7 139.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 10 ms
+true
+Time: 98 ms
+----------------------------
+7x7 120.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 6 ms
+true
+Time: 9 ms
+----------------------------
+7x7 123.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 16 ms
+true
+Time: 48 ms
+----------------------------
+9x9 131.in
+rows: 9 cols: 9 maxNum: 10
+Computation time : 62 ms
+true
+Time: 928 ms
+----------------------------
+8x8 135.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 3 ms
+true
+Time: 2386 ms
+----------------------------
+9x9 141.in
+rows: 9 cols: 9 maxNum: 7
+timeout
+UNSAT
+9x9 124.in
+rows: 9 cols: 9 maxNum: 10
+Computation time : 22 ms
+true
+Time: 1451 ms
+----------------------------
+6x6 142.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 1 ms
+true
+Time: 2 ms
+----------------------------
+10x10 121.in
+rows: 10 cols: 10 maxNum: 10
+timeout
+UNSAT
+7x7 140.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 117 ms
+true
+Time: 135 ms
+----------------------------
+7x7 133.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 8 ms
+true
+Time: 113 ms
+----------------------------
+8x8 130.in
+rows: 8 cols: 8 maxNum: 6
+Computation time : 9 ms
+true
+Time: 13085 ms
+----------------------------
+7x7 124.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 4 ms
+true
+Time: 4 ms
+----------------------------
+10x10 124.in
+rows: 10 cols: 10 maxNum: 10
+Computation time : 10 ms
+true
+Time: 1356011 ms
+----------------------------
+timeout
+UNSAT
+6x6 138.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 9 ms
+true
+Time: 10 ms
+----------------------------
+7x7 144.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 3 ms
+true
+Time: 16 ms
+----------------------------
+6x6 145.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 12 ms
+true
+Time: 17 ms
+----------------------------
+8x8 136.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 62 ms
+true
+Time: 711 ms
+----------------------------
+8x8 139.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 2 ms
+true
+Time: 4 ms
+----------------------------
+8x8 141.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 42 ms
+true
+Time: 151 ms
+----------------------------
+8x8 121.in
+rows: 8 cols: 8 maxNum: 8
+Computation time : 3 ms
+true
+Time: 1187 ms
+----------------------------
+6x6 122.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 4 ms
+true
+Time: 5 ms
+----------------------------
+8x8 132.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 12 ms
+true
+Time: 58 ms
+----------------------------
+9x9 120.in
+rows: 9 cols: 9 maxNum: 7
+Computation time : 3 ms
+true
+Time: 3116350 ms
+----------------------------
+Computation time : 7 ms
+true
+Time: 5262345 ms
+----------------------------
+timeout
+UNSAT
+9x9 138.in
+rows: 9 cols: 9 maxNum: 8
+Computation time : 3 ms
+true
+Time: 5157237 ms
+----------------------------
+Computation time : 3 ms
+true
+Time: 2358814 ms
+----------------------------
+Computation time : 4 ms
+true
+Time: 603499 ms
+----------------------------
+6x6 123.in
+rows: 6 cols: 6 maxNum: 5
+Computation time : 5 ms
+true
+Time: 13 ms
+----------------------------
+9x9 130.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 3 ms
+true
+Time: 28840 ms
+----------------------------
+10x10 122.in
+rows: 10 cols: 10 maxNum: 10
+Computation time : 3 ms
+true
+Time: 969 ms
+----------------------------
+6x6 140.in
+rows: 6 cols: 6 maxNum: 7
+Computation time : 34 ms
+true
+Time: 34 ms
+----------------------------
+8x8 143.in
+rows: 8 cols: 8 maxNum: 9
+Computation time : 5 ms
+true
+Time: 5 ms
+----------------------------
+6x6 132.in
+rows: 6 cols: 6 maxNum: 4
+Computation time : 102 ms
+true
+Time: 120 ms
+----------------------------
+9x9 122.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 56 ms
+true
+Time: 841 ms
+----------------------------
+7x7 136.in
+rows: 7 cols: 7 maxNum: 5
+Computation time : 2 ms
+true
+Time: 5 ms
+----------------------------
+6x6 134.in
+rows: 6 cols: 6 maxNum: 6
+Computation time : 24 ms
+true
+Time: 24 ms
+----------------------------
+7x7 138.in
+rows: 7 cols: 7 maxNum: 6
+Computation time : 91 ms
+true
+Time: 106 ms
+----------------------------
+9x9 139.in
+rows: 9 cols: 9 maxNum: 9
+Computation time : 2 ms
+true
+Time: 22530 ms
+----------------------------
+10x10 142.in
+rows: 10 cols: 10 maxNum: 10
+timeout
+UNSAT
+7x7 122.in
+rows: 7 cols: 7 maxNum: 7
+Computation time : 3 ms
+true
+Time: 24 ms
+----------------------------
+8x8 142.in
+rows: 8 cols: 8 maxNum: 7
+Computation time : 3 ms
+true
+Time: 169 ms
+----------------------------
+8x8 138.in
+rows: 8 cols: 8 maxNum: 5
+Computation time : 3 ms
+true
+Time: 8808 ms
+----------------------------
+10x10 144.in
+rows: 10 cols: 10 maxNum: 11
+timeout
+UNSAT
+10x10 123.in
+rows: 10 cols: 10 maxNum: 11
+Computation time : 24 ms
+true
+Time: 9203 ms
+----------------------------
+Computation time : 3 ms
+true
+Time: 2563845 ms
+----------------------------
+Computation time : 3 ms
+true
+Time: 4133252 ms
+----------------------------
+Computation time : 4 ms
+true
+Time: 3036285 ms
+----------------------------
+  
