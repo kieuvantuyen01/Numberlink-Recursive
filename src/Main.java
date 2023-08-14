@@ -17,17 +17,18 @@ public class Main {
     public static File outputFolder = new File(outputPath);
     public static Numberlink numberlink = null;
     public static int maxNum = 0;
+    public static String status = "UNSAT";
 
-//    public static void outputToTxt(String res, File outFile) {
-//        try {
-//            FileWriter writer = new FileWriter(outFile,true);
-//            writer.write(res + "\n");
-//            writer.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
+   public static void outputToTxt(String res, File outFile) {
+       try {
+           FileWriter writer = new FileWriter(outFile,true);
+           writer.write(res + "\n");
+           writer.close();
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+
+   }
     private static int getMaxNum(int[][] matrix) {
         int maxNum = 0;
         for (int i = 0; i < matrix.length; i++) {
@@ -71,10 +72,10 @@ public class Main {
                 process(fileEntry);
             } else {
                 if (fileEntry.isFile()) {
-//                    String fileInfo = "";
+                   String fileInfo = "";
                     String fileName = fileEntry.getName();
                     if ((fileName.substring(fileName.lastIndexOf('.') + 1).toLowerCase()).equals("in")) {
-//                        final String[] time = {""};
+                       final String[] time = {""};
                         ExecutorService executor = Executors.newSingleThreadExecutor();
                         Future<?> future = executor.submit(new Runnable() {
                             @Override
@@ -87,10 +88,10 @@ public class Main {
                                         flow[i] = 0;
                                     }
                                     long t0 = System.currentTimeMillis();
-//                                    status = String.valueOf(numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow));
-                                    System.out.println((numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow)));
+                                    status = String.valueOf(numberlink.NumberlinkSolver(numberlink.map, numberlink.LabelEndPosition(), numberlink.LabelFirstPosition(),0, flow));
+                                    System.out.println(status);
                                     long tf = System.currentTimeMillis();
-//                                    time[0] = String.valueOf(tf - t0);
+                                   time[0] = String.valueOf(tf - t0);
                                     System.out.println("Time: " + (tf - t0) + " ms");
                                 } catch (IOException e) {
                                     throw new RuntimeException(e);
@@ -106,16 +107,16 @@ public class Main {
                             System.out.println("caught exception: " + e.getCause());
                         } catch (java.util.concurrent.TimeoutException e) {
                             future.cancel(true);              //     interrupt the job
-//                            time[0] = "timeout";
+                            time[0] = "timeout";
                             System.out.println("timeout");
-//                            status = "UNSAT";
+                            status = "UNSAT";
                             System.out.println("UNSAT");
                         } finally {
                             executor.shutdownNow();           //     always reclaim resources
                         }
-//                        fileInfo = fileName + "\t" + numberlink.height + "x" + numberlink.width + "\t" + maxNum + "\t" + time[0];
+                       fileInfo = fileName + "\t" + numberlink.height + "x" + numberlink.width + "\t" + maxNum + "\t" + time[0] + "\t" + status;
                     }
-//                    outputToTxt(fileInfo, outputFolder);
+                   outputToTxt(fileInfo, outputFolder);
                 }
             }
         }
