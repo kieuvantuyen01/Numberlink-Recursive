@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 
 public class Main {
     public static final int TIMEOUT = 900;
-    static String inputPath = "./inp1";
+    static String inputPath = "./inp10";
     // output path consits of Datetime
     static String outputPath = "./out/out_" + java.time.LocalDate.now() + "_" + java.time.LocalTime.now().toString().substring(0, 8) + ".txt";
     public static File inputFolder = new File(inputPath);
@@ -76,7 +76,7 @@ public class Main {
                     String fileName = fileEntry.getName();
                     if ((fileName.substring(fileName.lastIndexOf('.') + 1).toLowerCase()).equals("in")) {
                        final String[] time = {""};
-                        ExecutorService executor = Executors.newSingleThreadExecutor();
+                        ExecutorService executor = Executors.newFixedThreadPool(8);
                         Future<?> future = executor.submit(new Runnable() {
                             @Override
                             public void run() {
@@ -99,6 +99,8 @@ public class Main {
                                 System.out.println("----------------------------");
                             }
                         });
+                        executor.shutdown();                    //     reject all further submissions
+
                         try {
                             future.get(TIMEOUT, TimeUnit.SECONDS);  //     wait Time (seconds) to finish
                         } catch (InterruptedException e) {    //     possible error cases
