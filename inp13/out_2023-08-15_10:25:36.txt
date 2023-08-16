@@ -1,0 +1,6 @@
+11x11 144.in	11x11	10	timeout	UNSAT
+11x11 138.in	11x11	12	timeout	UNSAT
+11x11 122.in	11x11	8	timeout	UNSAT
+11x11 143.in	11x11	9	timeout	UNSAT
+11x11 133.in	11x11	10	timeout	UNSAT
+11x11 134.in	11x11	12	timeout	UNSAT

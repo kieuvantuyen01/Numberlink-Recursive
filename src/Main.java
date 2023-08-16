@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 
 public class Main {
     public static final int TIMEOUT = 900;
-    static String inputPath = "./inp10";
+    static String inputPath = "./inp12";
     // output path consits of Datetime
     static String outputPath = "./out/out_" + java.time.LocalDate.now() + "_" + java.time.LocalTime.now().toString().substring(0, 8) + ".txt";
     public static File inputFolder = new File(inputPath);
