@@ -1,0 +1,14 @@
+9x9 136.in	9x9	8	95578	true
+9x9 143.in	9x9	8	49950	true
+9x9 123.in	9x9	8	282	true
+9x9 121.in	9x9	9	19	true
+9x9 140.in	9x9	9	42814	true
+9x9 132.in	9x9	10	76	true
+9x9 135.in	9x9	8	276	true
+9x9 142.in	9x9	10	60	true
+9x9 134.in	9x9	7	939	true
+9x9 144.in	9x9	9	11202	true
+9x9 145.in	9x9	8	25287	true
+9x9 131.in	9x9	10	306	true
+9x9 141.in	9x9	7	timeout	UNSAT
+9x9 124.in	9x9	10	612	true

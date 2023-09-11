@@ -1,0 +1,4 @@
+10x15 400.in	15x10	8	timeout	UNSAT
+10x15 399.in	15x10	9	timeout	UNSAT
+10x15 398.in	15x10	8	timeout	UNSAT
+10x15 397.in	15x10	9	timeout	UNSAT
